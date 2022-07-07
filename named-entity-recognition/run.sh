@@ -10,7 +10,7 @@ python -c "import torch; print(torch.cuda.is_available())"
 python run_ner.py \
     --data_dir ${DATA_DIR}/${ENTITY} \
     --labels ${DATA_DIR}/${ENTITY}/labels.txt \
-    --model_name_or_path dmis-lab/biobert-large-cased-v1.1 \
+    --model_name_or_path dmis-lab/biobert-base-cased-v1.2 \
     --output_dir output/${ENTITY} \
     --max_seq_length 256 \
     --num_train_epochs 20 \
