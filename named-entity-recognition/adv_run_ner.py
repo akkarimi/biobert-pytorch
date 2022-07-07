@@ -21,6 +21,7 @@ import os
 import sys
 import pdb
 import subprocess
+import torch.nn as nn
 
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Tuple
@@ -92,7 +93,15 @@ class DataTrainingArguments:
         default=False, metadata={"help": "Overwrite the cached training and evaluation sets"}
     )
 
+class Psum(AutoModelForTokenClassification):
+    def __init__(self, count, config):
+        super(Psum, self).__init__()
+	self.count = count
+	self.
+    def forward(self, input):
+        
 
+        
 def main():
     # See all possible arguments in src/transformers/training_args.py
     # or by passing the --help flag to this script.

@@ -1,0 +1,10 @@
+eval_loss = 0.10510590672492981
+eval_precision = 0.89737108190091
+eval_recall = 0.9135357694287185
+eval_f1 = 0.9053812802856415
+eval_runtime = 33.1862
+eval_samples_per_second = 75.332
+test_mem_cpu_alloc_delta = 12853193
+test_mem_gpu_alloc_delta = 0
+test_mem_cpu_peaked_delta = 7298207
+test_mem_gpu_peaked_delta = 1146297344
