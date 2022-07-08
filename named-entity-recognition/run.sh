@@ -3,7 +3,7 @@
 DATA_DIR=../datasets/NER
 ENTITY=sdNER
 
-
+CUDA_VISIBLE_DEVICES=3
 python -c "import torch; print('using pytorch', torch.__version__)"
 python -c "import torch; print(torch.cuda.is_available())"
 

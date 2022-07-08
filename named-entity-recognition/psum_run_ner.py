@@ -130,8 +130,8 @@ class PSum(PreTrainedModel):
         all_logits = []
         losses = []
         for i in range(self.num_psum_layers):
-            out = self.pre_layers[-1-i](hidden_states=outputs.hidden_states[-i-1], 
-                    attention_mask=outputs.attentions[-i-1])[0]
+            out = self.pre_layers[-1-i](hidden_states=outputs.hidden_states[-1], 
+                    attention_mask=outputs.attentions[-1])[0]
 
             logits = self.classify(out)
             all_logits.append(logits)  
